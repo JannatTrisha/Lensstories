@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #00000080; /* Semi-transparent black background */
+    color: white;
+    padding: 4px;
+    margin-top:0%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-bottom:35px;
+    padding: 0;
+    display: flex;
+    justify-content:end;
+    /* Align items to the center horizontally */
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background: linear-gradient(to right, linear-gradient(90deg, #FB3D97 0%, #FD8B04 100%);
+    );
+    transition: background 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: linear-gradient(to right,  #FB3D97 0%, #FD8B04 100%);
+  }
+  
+  .section-with-background {
+    background-image: url('/banner.png');
+    background-color:  #4DE94080;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    
+  }
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center; /* Align items to the center vertically on smaller screens */
+    }
+  
+    nav li {
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+  }
+ 
+  
+  .container {
+    min-height: 80vh; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #FFFF;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    font-size: 48px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align buttons to the bottom */
+    height: 20vh; /* Adjust the height as needed */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .transparent-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align buttons to the bottom */
+    padding: 20px; /* Add padding for spacing */
+    position: relative;
+    margin-bottom: auto;
+    
+  }
+  
+  .gradient-button,
+  .transparent-button {
+    margin-right: 2px; /* Adjust space between buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .gradient-button {
+    background: linear-gradient(to right, #FB3D97 0%, #FD8B04 100%);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(to right, #FB3D97 0%, #FD8B04 100%);
+  }
+  
+  .transparent-button {
+    background: transparent;
+    border: 1px solid #FFFF ;
+    color: #333;
+  }
+  
+  .transparent-button:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+/**section  2 is a svg code**/
+
+/**Final section**/
+
+
+.blue-section {
+  background-color: #3498db; /* Blue background color */
+  color: white; /* Text color */
+  padding: 50px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.black-section {
+  background-color: #2c3e50; /* Black background color */
+  color: white; /* Text color */
+  padding: 50px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.blue-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for blue section */
+  gap: 20px; /* Adjust the gap between columns */
+}
+
+.black-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for black section */
+  gap: 20px; /* Adjust the gap between columns */
+}
+
+.column {
+  flex: 1;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for social media logos or icons as needed */
+
